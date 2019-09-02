@@ -1,0 +1,358 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for the Avada
+Author: Dave Lindberg
+Template: Avada
+*/
+@media only screen and (max-width: 480px) {
+  .normal_logo {
+    width: 85%;
+    float: left;
+  }
+  .mobile-menu-icons a {
+    position: absolute !important;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 799px) {
+  .values-header {
+    position: relative !important;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .values-header h1.rev-text {
+    color: #333 !important;
+    text-shadow: none;
+  }
+  .tfs-slider .slide-content-container h2 {
+    font-size: 40px !important;
+  }
+  .page-id-11022 .post-content {
+    margin-top: -100px;
+  }
+  #main {
+    padding-top: 0px !important;
+  }
+  .postid-11099 .normal_logo,
+  .postid-11127 .normal_logo,
+  .postid-11112 .normal_logo,
+  .page-id-11449 .normal_logo,
+  .page-id-11436 .normal_logo,
+  .page-id-11442 .normal_logo,
+  .page-id-11022 .normal_logo {
+    content: url("/wp-content/uploads/2014/11/endurance-main-logo.png") !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hide-team-phone {
+    display: none !important;
+  }
+  .hide-team-desktop {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .hide-team-desktop {
+    display: none !important;
+  }
+  .hide-team-phone {
+    display: block !important;
+  }
+}
+
+/* General */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h5 {
+  font-weight: 300 !important;
+}
+
+.post-content p {
+  text-align: justify;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.rev-text {
+  color: #FFF !important;
+}
+
+.intro-p {
+  font-size: 1.3em;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Scroll to top styling */
+#toTop:hover {
+  background-color: #065f32;
+}
+
+/* Footer Background */
+.fusion-footer, .fusion-footer-copyright-area, .fusion-footer-copyright-area {
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-color: rgba(255, 255, 255, 0) !important;
+}
+
+/* Full Screen background image fix */
+html, body, #wrapper {
+  height: 100%;
+}
+
+#main {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -49px;
+  padding-bottom: 0 !important;
+}
+
+#main:after {
+  content: "";
+  display: block;
+}
+
+#main:after {
+  /* .push must be the same height as footer */
+  height: 49px;
+}
+
+#main a:hover {
+  text-decoration: underline;
+}
+
+/* #main, #wrapper, .fusion-separator .icon-wrapper, html, body, .bbp-arrow {
+background:#f7f7f7; 
+background: -webkit-linear-gradient(#fff, #eee); 
+  background: -o-linear-gradient(#fff, #eee); 
+  background: -moz-linear-gradient(#fff, #eee); 
+  background: linear-gradient(#fff, #eee); 
+} */
+/* Homepage */
+h2.home {
+  font-family: 'Oswald', Arial, Helvetica, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 3.2em !important;
+  line-height: 1.1em !important;
+  text-transform: uppercase;
+  color: #FFF !important;
+  padding: .3em 1em 0 1em !important;
+  margin-bottom: 30px !important;
+  text-align: center !important;
+  -webkit-text-shadow: 0px 0px 30px rgba(0, 60, 120, 0.4) !important;
+  -moz-text-shadow: 0px 0px 30px rgba(0, 60, 120, 0.4) !important;
+  text-shadow: 0px 0px 30px rgba(0, 60, 120, 0.4) !important;
+}
+
+h3.home-sub {
+  font-family: "PT Sans", sans-serif !important;
+  font-style: italic !important;
+  font-size: 1.5em !important;
+  line-height: 1.2em !important;
+  -webkit-text-shadow: 0px 0px 20px rgba(0, 60, 120, 0.4) !important;
+  -moz-text-shadow: 0px 0px 20px rgba(0, 60, 120, 0.4) !important;
+  text-shadow: 0px 0px 20px rgba(0, 60, 120, 0.4) !important;
+  font-weight: 300 !important;
+  text-align: center !important;
+  color: #FFF !important;
+  padding: 0em 1em .3em 1em !important;
+  margin: 10px 0 0px !important;
+}
+
+.with-bg {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1em 0 1em 0;
+}
+
+/* Sticky header shadow remove */
+.fusion-is-sticky .fusion-header-v1 .fusion-sticky-shadow, .fusion-is-sticky .fusion-header-v2 .fusion-sticky-shadow, .fusion-is-sticky .fusion-header-v3 .fusion-sticky-shadow {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}
+
+/* Nav menu hover fix */
+.fusion-main-menu .current_page_item > a, .fusion-main-menu .current-menu-item > a, .fusion-main-menu .current-menu-parent > a, .fusion-main-menu .current-menu-ancestor > a {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.fusion-main-menu > ul > li > a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+/* What we do page */
+.values-header {
+  width: 100%;
+  margin-top: 55px;
+  text-shadow: 0px 0px 10px #065383;
+}
+
+/* Contact Page */
+body.page-template-contact-php #content .post-content form {
+  display: none !important;
+}
+
+.fusion-portfolio-one .fusion-button, #main .comment-submit, #reviews input#submit, .comment-form input[type="submit"], .wpcf7-form input[type="submit"], .wpcf7-submit, .bbp-submit-wrapper .button, .button-default, .fusion-button-default, .button.default, .price_slider_amount button, .gform_wrapper .gform_button, .woocommerce .single_add_to_cart_button, .woocommerce button.button, .woocommerce .shipping-calculator-form .button, .woocommerce .checkout #place_order, .woocommerce .checkout_coupon .button, .woocommerce .login .button, .woocommerce .register .button, .woocommerce .avada-order-details .order-again .button, .woocommerce .avada-order-details .order-again .button, .woocommerce .lost_reset_password input[type=submit], #bbp_user_edit_submit, .ticket-selector-submit-btn[type=submit], .gform_page_footer input[type=button] {
+  background: #409445 !important;
+}
+
+/* Portfolio */
+.postid-11144 #main {
+  padding-top: 50px;
+}
+
+.single-navigation {
+  border: none;
+}
+
+.port-website a {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.port-website a:hover {
+  text-decoration: underline;
+}
+
+.port-logo {
+  width: 70%;
+  margin: 0px auto 20px;
+  display: block;
+}
+
+.page-id-11036 .portfolio-content h4 {
+  display: none;
+}
+
+.content-overlay {
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.content-overlay-dark {
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+}
+
+.fusion-column.fusion-one-sixth, .fusion-column.fusion-five-sixth, .fusion-column.fusion-one-fifth, .fusion-column.fusion-two-fifth, .fusion-column.fusion-three-fifth, .fusion-column.fusion-four-fifth, .fusion-column.fusion-one-fourth, .fusion-column.fusion-three-fourth, .fusion-column.fusion-one-third, .fusion-column.fusion-two-third, .fusion-column.fusion-one-half {
+  margin-bottom: 3% !important;
+}
+
+/* Bio Pages */
+.team-title {
+  font-weight: 300 !important;
+  margin-top: -15px;
+  text-transform: uppercase;
+}
+
+/* Footer dark text fix */
+.page-id-11036 .fusion-copyright-notice, .page-id-2712 .fusion-copyright-notice, .page-id-86 .fusion-copyright-notice {
+  color: #929292;
+}
+
+/* Homepage text responsive fix */
+@media screen and (max-width: 480px) {
+  h2.home {
+    font-size: 2.2em !important;
+  }
+  .phone-hidden {
+    display: none;
+  }
+}
+
+/* Grid Default Styling Fix */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+/* Flip Boxes Fix */
+.fusion-flip-box .flip-box-front, .fusion-flip-box .flip-box-back {
+  padding: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fusion-flip-box .flip-box-heading-back {
+  font-family: "PT Sans", sans-serif !important;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .075em;
+}
+
+.fusion-flip-box .flip-box-back-inner {
+  font-family: "PT Sans", sans-serif !important;
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: .05em;
+}
+
+.fusion-flip-box .flip-box-grafix, .fusion-flip-box .flip-box-inner-wrapper, .fusion-flip-boxes {
+  margin-bottom: 0px !important;
+}
+
+.fusion-flip-box .flip-box-back {
+  min-height: 1px !important;
+  height: 100% !important;
+}
+
+.team-name {
+  font-family: "PT Sans", sans-serif !important;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: #666;
+  text-align: center;
+  margin-top: .5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.team-role {
+  font-family: "PT Sans", sans-serif !important;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: .05em;
+  color: #666;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.team-name:hover, .team-role:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .team-header-fix {
+    margin-top: 12px !important;
+  }
+}
+
+.fusion-flip-box .flip-box-front,
+.fusion-flip-box .flip-box-back {
+  webkit-transition: all !important;
+  -webkit-transition: all !important;
+  transition: all !important;
+}
+/*# sourceMappingURL=style.css.map */
