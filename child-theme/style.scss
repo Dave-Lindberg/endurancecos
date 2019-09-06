@@ -3,6 +3,7 @@ Theme Name: Avada Child
 Description: Child theme for the Avada
 Author: Dave Lindberg
 Template: Avada
+Version: 1.0.1
 */
 
 
@@ -183,8 +184,11 @@ margin: 10px 0 0px !important;
 }
 
 .with-bg {
-    background: rgba(0,0,0, 0.4);
-padding: 1em 0 1em 0;
+  // background: rgba(0,0,0, 0.4);
+  // padding: 1em 0 1em 0;
+  h2 {
+    text-shadow: 5px 5px 10px black !important;
+  }
 }
 
 
@@ -208,7 +212,9 @@ border-color:rgba(255,255,255,0);
 }
 
 
-/* What we do page */
+/* ----------------------------------------
+   What we do page
+   --------------------------------------- */
 
 .values-header {
 width: 100%;
@@ -216,17 +222,210 @@ margin-top:55px;
 text-shadow:0px 0px 10px #065383;
 }
 
+.page-id-11022 {
+  .fusion-row {
+    padding: 0px !important;
+    .fusion-fullwidth {
+      margin-bottom: -2em;
+      padding: 20% 0 3% !important;
+      position:absolute;
+      bottom: 0;
+      background: rgb(0,0,0);
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.7)), to(rgba(0,0,0,0)));
+      background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+      .content-overlay-dark {
+        background: none !important;
+      }
+      p {
+        font-weight: 400;
+        text-shadow: 0 0 5px #000000;
+        text-align: left;
+      }
+      .fusion-two-third {
+        width: 100% !important;
+        padding: 0 10% !important;
+      }
+    }
+  }
+    }
 
-/* Contact Page */
+
+
+/* ----------------------------------------
+   Portfolio & Partners Pages
+   --------------------------------------- */
+
+#post-12020, .page-id-2712 {
+  .fusion-column-wrapper {
+    border: 1px solid #eaeaea;
+  }
+  .fusion-one-half {
+    width: 50% !important;
+  }
+  .fusion-layout-column {
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .fusion-one-third {
+    width: 33.33% !important;
+    img {
+      height: 17vw !important;
+      }
+    
+    h5 {
+      margin-left: 1px;
+    }
+  }
+  img:hover {
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: green_fade;
+            animation-name: green_fade;
+  }
+
+}
+
+@-webkit-keyframes green_fade {
+  from{
+    -webkit-filter: saturate(0%);
+            filter: saturate(0%);
+  }
+  20% {
+    -webkit-filter: saturate(0%);
+            filter: saturate(0%);
+  }
+  to {
+    -webkit-filter: saturate(100%);
+            filter: saturate(100%);
+  }
+}
+
+@keyframes green_fade {
+  from{
+    -webkit-filter: saturate(0%);
+            filter: saturate(0%);
+  }
+  20% {
+    -webkit-filter: saturate(0%);
+            filter: saturate(0%);
+  }
+  to {
+    -webkit-filter: saturate(100%);
+            filter: saturate(100%);
+  }
+}
+
+.fusion-title .title-sep.sep-double {
+  border-top-width: 0px;
+  border-color: #aeaeae !important;
+}
+
+/* ----------------------------------------
+   Contact Us Page
+   --------------------------------------- */
+
+.page-id-12533 {
+  #main {
+    background: url("http://endurancecos.com/staging/wp-content/uploads//2014/11/bigstock-Beautiful-snow-capped-mountain-47084491.jpg");
+    background-size: cover;
+    -webkit-filter: saturate(50%);
+            filter: saturate(50%);
+  }
+  #post-12533 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 50% auto;
+    height: 100vh;
+    .post-content {
+      background-color: #ffffff95;
+      grid-column: 2/3;
+      padding: 4em 15%;
+      overflow: scroll;
+      p {
+        text-shadow: 0 0 3px #ffffff;
+      }
+      input {
+        color: white;
+      }
+    }
+  }
+}
 
 body.page-template-contact-php #content .post-content form {
-display: none !important;
-}
-.fusion-portfolio-one .fusion-button, #main .comment-submit, #reviews input#submit, .comment-form input[type="submit"], .wpcf7-form input[type="submit"], .wpcf7-submit, .bbp-submit-wrapper .button, .button-default, .fusion-button-default, .button.default, .price_slider_amount button, .gform_wrapper .gform_button, .woocommerce .single_add_to_cart_button, .woocommerce button.button, .woocommerce .shipping-calculator-form .button, .woocommerce .checkout #place_order, .woocommerce .checkout_coupon .button, .woocommerce .login .button, .woocommerce .register .button, .woocommerce .avada-order-details .order-again .button, .woocommerce .avada-order-details .order-again .button, .woocommerce .lost_reset_password input[type=submit], #bbp_user_edit_submit, .ticket-selector-submit-btn[type=submit], .gform_page_footer input[type=button] {
-background: #409445 !important;
+  display: none !important;
+  }
+  .fusion-portfolio-one .fusion-button, #main .comment-submit, #reviews input#submit, .comment-form input[type="submit"], .wpcf7-form input[type="submit"], .wpcf7-submit, .bbp-submit-wrapper .button, .button-default, .fusion-button-default, .button.default, .price_slider_amount button, .gform_wrapper .gform_button, .woocommerce .single_add_to_cart_button, .woocommerce button.button, .woocommerce .shipping-calculator-form .button, .woocommerce .checkout #place_order, .woocommerce .checkout_coupon .button, .woocommerce .login .button, .woocommerce .register .button, .woocommerce .avada-order-details .order-again .button, .woocommerce .avada-order-details .order-again .button, .woocommerce .lost_reset_password input[type=submit], #bbp_user_edit_submit, .ticket-selector-submit-btn[type=submit], .gform_page_footer input[type=button] {
+  background: #409445 !important;
+  }
+  
+
+/* ----------------------------------------
+   Individual Partner Pages
+   --------------------------------------- */
+
+.page-id-11438 { // tonelli
+  #main .fusion-row {
+    position:absolute;
+    bottom: -100px;
+    background: rgb(0,0,0);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.7)), to(rgba(0,0,0,0)));
+    background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+    padding: 20% 0 3% !important;
+    .content-overlay {
+      background: none !important;
+      h2, h4, p, a {
+        color: white;
+        font-weight: 400;
+        text-shadow: 0 0 5px #000000;
+        text-align: left;
+      }
+    }
+    a {
+      color: #409445 !important;
+    }
+  }
 }
 
-/* Portfolio */
+/* ----------------------------------------
+   Company Pages
+   --------------------------------------- */
+
+#main .fusion-row  .portfolio-full { 
+  position:absolute;
+  bottom: -100px;
+  background: rgb(0,0,0);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.7)), to(rgba(0,0,0,0)));
+  background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+  padding: 5% 0 3% !important;
+  .content-overlay {
+    background: none !important;
+    h2, h4, p {
+      color: white;
+      font-weight: 400;
+      text-shadow: 0 0 5px #000000;
+      text-align: left;
+    }
+  }
+  .title-heading-left {
+    text-shadow: none !important;
+    background-color: green;
+    padding: .3em 1em .5em;
+    border-radius: 12px;
+    a {
+      color: white !important;
+      letter-spacing: 2px;
+    }
+  }
+  .single-navigation, .project-description {
+    max-width: 100%;
+    padding-right: 3em;
+  }
+}
+
+/* ----------------------------------------
+   Legacy code....
+   --------------------------------------- */
+
 
 .postid-11144 #main {
 padding-top:50px;
@@ -273,7 +472,8 @@ margin-bottom:3% !important;
 }
 
 
-/* Bio Pages */
+/* Bios page */
+
 
 .team-title {
 font-weight:300 !important;
@@ -310,9 +510,15 @@ padding-right: 8px !important;
 
 .fusion-flip-box .flip-box-front, .fusion-flip-box .flip-box-back {
 padding: 0 !important;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: center;
-justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 
 .fusion-flip-box .flip-box-heading-back {
@@ -372,7 +578,6 @@ text-decoration: none;
 .fusion-flip-box .flip-box-front,
 .fusion-flip-box .flip-box-back {
 webkit-transition: all !important;
--moz-transition: all !important;
--o-transition: all !important;
+-webkit-transition: all !important;
 transition: all !important;
 }
