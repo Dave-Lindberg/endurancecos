@@ -150,8 +150,35 @@ background: -webkit-linear-gradient(#fff, #eee);
   background: linear-gradient(#fff, #eee); 
 } */
 
+/* ----------------------------------------
+   Mobile navigation
+   --------------------------------------- */
+
+    .fusion-mobile-nav-item {
+      margin-bottom: 1px !important;
+    a {
+      font-size: 18px !important;
+      height: 60px !important;
+      line-height: 60px !important;
+    }
+  }
+
+
+
 
 /* Homepage */
+#post-2660  {
+  .fusion-fullwidth {
+    margin-bottom: -2em;
+    padding: 20% 0 3% !important;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(0,0,0);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.7)), to(rgba(0,0,0,0)));
+    background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+  }  
+}
 
 h2.home {
 font-family: 'Oswald', Arial, Helvetica, sans-serif !important;
@@ -161,7 +188,7 @@ line-height:1.1em !important;
 text-transform:uppercase;
 color: #FFF !important;
 padding:.3em 1em 0 1em !important;
-margin-bottom: 30px !important;
+margin-bottom: 25vh !important;
 text-align:center !important;
 -webkit-text-shadow: 0px 0px 30px rgba(0,60,120, 0.4) !important;
     -moz-text-shadow: 0px 0px 30px rgba(0,60,120, 0.4) !important;
@@ -247,73 +274,70 @@ text-shadow:0px 0px 10px #065383;
       }
     }
   }
-    }
+  @media screen and (max-width: 480px) {
+    #main {
+      background-size: contain !important;
+      background-repeat: no-repeat !important;
+      background-position: top !important;
 
+    }
+    .fusion-row .fusion-fullwidth {
+      padding: 75vw 0 3% !important;
+      background: none !important;  
+      color: black !important;
+      bottom: inherit !important;
+      p {
+        color: black !important;
+        text-shadow: none !important;
+      }
+    }
+  }
+}
 
 
 /* ----------------------------------------
    Portfolio & Partners Pages
    --------------------------------------- */
 
-#post-12020, .page-id-2712 {
+#post-12020, .page-id-12020, .page-id-2712 {
   .fusion-column-wrapper {
     border: 1px solid #eaeaea;
   }
-  .fusion-one-half {
-    width: 50% !important;
-  }
-  .fusion-layout-column {
-    margin-right: 0px !important;
-    margin-bottom: 0px !important;
-  }
-  .fusion-one-third {
-    width: 33.33% !important;
-    img {
-      height: 17vw !important;
-      }
-    
-    h5 {
-      margin-left: 1px;
+  @media screen and (max-width: 480px) {
+    #main .fusion-row {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+    .title-heading-left {
+      font-size: 1.2em !important;
+      padding-left: 1em !important;
+      padding-right: 1em !important;
+    }
+    .fusion-one-half, .fusion-one-third {
+      margin-bottom: 1px !important;
     }
   }
-  img:hover {
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-name: green_fade;
-            animation-name: green_fade;
-  }
-
-}
-
-@-webkit-keyframes green_fade {
-  from{
-    -webkit-filter: saturate(0%);
-            filter: saturate(0%);
-  }
-  20% {
-    -webkit-filter: saturate(0%);
-            filter: saturate(0%);
-  }
-  to {
-    -webkit-filter: saturate(100%);
-            filter: saturate(100%);
+    @media screen and (min-width: 480px) {
+    .fusion-one-half {
+      width: 50% !important;
+    }
+    .fusion-layout-column {
+      margin-right: 0px !important;
+      margin-bottom: 0px !important;
+    }
+    .fusion-one-third {
+      width: 33.33% !important;
+      img {
+        height: 17vw !important;
+        }
+      
+      h5 {
+        margin-left: 1px;
+      }
+    }
   }
 }
 
-@keyframes green_fade {
-  from{
-    -webkit-filter: saturate(0%);
-            filter: saturate(0%);
-  }
-  20% {
-    -webkit-filter: saturate(0%);
-            filter: saturate(0%);
-  }
-  to {
-    -webkit-filter: saturate(100%);
-            filter: saturate(100%);
-  }
-}
 
 .fusion-title .title-sep.sep-double {
   border-top-width: 0px;
@@ -363,15 +387,18 @@ body.page-template-contact-php #content .post-content form {
    Individual Partner Pages
    --------------------------------------- */
 
-.page-id-11438 { // tonelli
+.page-id-11438,  // tonelli
+.page-id-11433, // hodges
+.page-id-12137 // klomp
+{
   #main .fusion-row {
     position:absolute;
     bottom: -100px;
     background: rgb(0,0,0);
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.7)), to(rgba(0,0,0,0)));
     background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
-    padding: 20% 0 3% !important;
-    .content-overlay {
+    padding: 20% 0 3% 2em !important;
+    .content-overlay, .content-overlay-dark {
       background: none !important;
       h2, h4, p, a {
         color: white;
@@ -393,34 +420,101 @@ body.page-template-contact-php #content .post-content form {
 #main .fusion-row  .portfolio-full { 
   position:absolute;
   bottom: -100px;
+  left: 0;
   background: rgb(0,0,0);
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,.7)), to(rgba(0,0,0,0)));
   background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
-  padding: 5% 0 3% !important;
-  .content-overlay {
-    background: none !important;
-    h2, h4, p {
-      color: white;
-      font-weight: 400;
-      text-shadow: 0 0 5px #000000;
-      text-align: left;
+  padding: 5% 0 8% !important;
+  .single-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    padding: 0 3em !important;
+    a {
+      grid-column: 1/2;
+      justify-self: left;
     }
+    a[rel=next] {
+      grid-column: 2/3;
+      justify-self: right;
+        }
+  }
+  h2, h4, p {
+    color: white;
+    font-weight: 400;
+    text-shadow: 0 0 5px #000000;
+    text-align: left;
+  }
+.content-overlay {
+    background: none !important;
   }
   .title-heading-left {
     text-shadow: none !important;
-    background-color: green;
-    padding: .3em 1em .5em;
+    background-color: none;
+    padding: .1em .5em .3em;
+    border: 1px solid #eaeaea;
     border-radius: 12px;
     a {
       color: white !important;
       letter-spacing: 2px;
+      font-size: 75%;
     }
   }
   .single-navigation, .project-description {
     max-width: 100%;
     padding-right: 3em;
   }
+  .fusion-one-half,  {
+    width: 50%;
+  }
+  .content-overlay-dark {
+    background: none !important;
+  }
 }
+// single page mods:
+
+// Working Point, Clara, Sighten
+.postid-11142, .postid-12035, .postid-12112,  {
+  .fusion-one-half {
+    margin-left: 50%;
+  }
+}
+// CultureIQ
+.post-11146 {
+  .fusion-one-half {
+    width: 40% !important;
+    margin-left: 60% !important;
+  }
+}
+// Sindeo 
+.post-11150 {
+  .fusion-one-half {
+    width: 35% !important;
+    margin-left: 45% !important;
+  }
+}
+// Lineage 
+.post-12344 {
+  .fusion-three-fifth {
+    width: 60% !important;
+    margin-left: 00% !important;
+  }
+}
+// Darkstore
+.postid-12411 {
+  .fusion-one-half {
+    width: 55% !important;
+    margin-left: 25% !important;
+  }
+}
+// TurnstyleCycle
+.postid-11099 {
+  .fusion-one-half {
+    width: 55% !important;
+    margin-left: 25% !important;
+  }
+}
+
 
 /* ----------------------------------------
    Legacy code....
