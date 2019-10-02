@@ -279,10 +279,9 @@ text-shadow:0px 0px 10px #065383;
       background-size: contain !important;
       background-repeat: no-repeat !important;
       background-position: top !important;
-
     }
     .fusion-row .fusion-fullwidth {
-      padding: 75vw 0 3% !important;
+      padding: 80vw 0 0% !important;
       background: none !important;  
       color: black !important;
       bottom: inherit !important;
@@ -304,6 +303,7 @@ text-shadow:0px 0px 10px #065383;
     border: 1px solid #eaeaea;
   }
   @media screen and (max-width: 480px) {
+    
     #main .fusion-row {
       padding-left: 0px !important;
       padding-right: 0px !important;
@@ -410,6 +410,14 @@ body.page-template-contact-php #content .post-content form {
     a {
       color: #409445 !important;
     }
+    @media screen and (max-width: 480px) {
+      position: initial;
+      bottom: auto;
+      img {
+        max-width: 90% !important;
+        padding: 0 2em !important;
+      }
+    }
   }
 }
 
@@ -470,6 +478,40 @@ body.page-template-contact-php #content .post-content form {
   .content-overlay-dark {
     background: none !important;
   }
+
+  @media screen and (max-width: 480px) {
+    position: initial;
+    bottom: auto;
+    
+    .single-navigation {
+      position: relative;
+      top: 0px;
+    }
+    .avada-portfolio, .avada_portfolio {
+      position: relative;
+      top: 00px !important;
+    }
+    .fusion-one-half, fusion-three-fifth {
+      width: 100% !important;
+    }
+    .project-description {
+      padding-right: 0px !important;
+    }
+    .fusion-column-wrapper {
+
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .single-avada_portfolio #main, 
+  .single-avada_portfolio #main .fusion-row {
+    padding: 0px !important;
+    #content {
+      margin-bottom: -2em !important;
+      min-height: 100vh !important;
+    }
+  }
 }
 // single page mods:
 
@@ -479,39 +521,42 @@ body.page-template-contact-php #content .post-content form {
     margin-left: 50%;
   }
 }
-// CultureIQ
+
+@media screen and (min-width: 481px) {
+// TurnstyleCycle
+.postid-11099 {
+  .fusion-one-half {
+    width: 55% !important;
+    margin-left: 25% !important;
+  }
+}
+ // CultureIQ
 .post-11146 {
   .fusion-one-half {
     width: 40% !important;
     margin-left: 60% !important;
   }
 }
-// Sindeo 
+ // Sindeo 
 .post-11150 {
   .fusion-one-half {
     width: 35% !important;
     margin-left: 45% !important;
   }
 }
-// Lineage 
-.post-12344 {
-  .fusion-three-fifth {
-    width: 60% !important;
-    margin-left: 00% !important;
+  // Lineage 
+  .post-12344 {
+    .fusion-three-fifth {
+      width: 60% !important;
+      margin-left: 00% !important;
+    }
   }
-}
-// Darkstore
-.postid-12411 {
-  .fusion-one-half {
-    width: 55% !important;
-    margin-left: 25% !important;
-  }
-}
-// TurnstyleCycle
-.postid-11099 {
-  .fusion-one-half {
-    width: 55% !important;
-    margin-left: 25% !important;
+    // Darkstore
+  .postid-12411 {
+    .fusion-one-half {
+      width: 55% !important;
+      margin-left: 25% !important;
+    }
   }
 }
 

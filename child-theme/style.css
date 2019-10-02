@@ -259,7 +259,7 @@ h3.home-sub {
     background-position: top !important;
   }
   .page-id-11022 .fusion-row .fusion-fullwidth {
-    padding: 75vw 0 3% !important;
+    padding: 80vw 0 0% !important;
     background: none !important;
     color: black !important;
     bottom: inherit !important;
@@ -412,6 +412,21 @@ body.page-template-contact-php #content .post-content form {
   color: #409445 !important;
 }
 
+@media screen and (max-width: 480px) {
+  .page-id-11438 #main .fusion-row,
+  .page-id-11433 #main .fusion-row,
+  .page-id-12137 #main .fusion-row {
+    position: initial;
+    bottom: auto;
+  }
+  .page-id-11438 #main .fusion-row img,
+  .page-id-11433 #main .fusion-row img,
+  .page-id-12137 #main .fusion-row img {
+    max-width: 90% !important;
+    padding: 0 2em !important;
+  }
+}
+
 /* ----------------------------------------
    Company Pages
    --------------------------------------- */
@@ -489,33 +504,64 @@ body.page-template-contact-php #content .post-content form {
   background: none !important;
 }
 
+@media screen and (max-width: 480px) {
+  #main .fusion-row .portfolio-full {
+    position: initial;
+    bottom: auto;
+  }
+  #main .fusion-row .portfolio-full .single-navigation {
+    position: relative;
+    top: 0px;
+  }
+  #main .fusion-row .portfolio-full .avada-portfolio, #main .fusion-row .portfolio-full .avada_portfolio {
+    position: relative;
+    top: 00px !important;
+  }
+  #main .fusion-row .portfolio-full .fusion-one-half, #main .fusion-row .portfolio-full fusion-three-fifth {
+    width: 100% !important;
+  }
+  #main .fusion-row .portfolio-full .project-description {
+    padding-right: 0px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .single-avada_portfolio #main,
+  .single-avada_portfolio #main .fusion-row {
+    padding: 0px !important;
+  }
+  .single-avada_portfolio #main #content,
+  .single-avada_portfolio #main .fusion-row #content {
+    margin-bottom: -2em !important;
+    min-height: 100vh !important;
+  }
+}
+
 .postid-11142 .fusion-one-half, .postid-12035 .fusion-one-half, .postid-12112 .fusion-one-half {
   margin-left: 50%;
 }
 
-.post-11146 .fusion-one-half {
-  width: 40% !important;
-  margin-left: 60% !important;
-}
-
-.post-11150 .fusion-one-half {
-  width: 35% !important;
-  margin-left: 45% !important;
-}
-
-.post-12344 .fusion-three-fifth {
-  width: 60% !important;
-  margin-left: 00% !important;
-}
-
-.postid-12411 .fusion-one-half {
-  width: 55% !important;
-  margin-left: 25% !important;
-}
-
-.postid-11099 .fusion-one-half {
-  width: 55% !important;
-  margin-left: 25% !important;
+@media screen and (min-width: 481px) {
+  .postid-11099 .fusion-one-half {
+    width: 55% !important;
+    margin-left: 25% !important;
+  }
+  .post-11146 .fusion-one-half {
+    width: 40% !important;
+    margin-left: 60% !important;
+  }
+  .post-11150 .fusion-one-half {
+    width: 35% !important;
+    margin-left: 45% !important;
+  }
+  .post-12344 .fusion-three-fifth {
+    width: 60% !important;
+    margin-left: 00% !important;
+  }
+  .postid-12411 .fusion-one-half {
+    width: 55% !important;
+    margin-left: 25% !important;
+  }
 }
 
 /* ----------------------------------------
