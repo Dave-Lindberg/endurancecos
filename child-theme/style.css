@@ -541,6 +541,15 @@ body.page-template-contact-php #content .post-content form {
   margin-left: 50%;
 }
 
+.postid-12526 .fusion-one-half {
+  margin-left: 3em;
+}
+
+.postid-12543 .imageframe-1 img {
+  -webkit-filter: drop-shadow(0 0 1.5em white);
+          filter: drop-shadow(0 0 1.5em white);
+}
+
 @media screen and (min-width: 481px) {
   .postid-11099 .fusion-one-half {
     width: 55% !important;
