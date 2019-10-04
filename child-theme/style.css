@@ -311,6 +311,27 @@ h3.home-sub {
   }
 }
 
+/* ----------------------------------------
+   Portfolio Page
+   --------------------------------------- */
+#post-12020 p {
+  display: none;
+}
+
+#post-12020 img {
+  height: 28vw;
+}
+
+#post-12020 .company-tile img {
+  -webkit-filter: brightness(1) grayscale(1);
+          filter: brightness(1) grayscale(1);
+}
+
+#post-12020 .company-tile img:hover {
+  -webkit-filter: unset;
+          filter: unset;
+}
+
 .fusion-title .title-sep.sep-double {
   border-top-width: 0px;
   border-color: #aeaeae !important;
@@ -541,6 +562,10 @@ body.page-template-contact-php #content .post-content form {
   margin-left: 50%;
 }
 
+.postid-12035 .post-content h1 {
+  color: #999999 !important;
+}
+
 .postid-12526 .fusion-one-half {
   margin-left: 3em;
 }
@@ -548,6 +573,12 @@ body.page-template-contact-php #content .post-content form {
 .postid-12543 .imageframe-1 img {
   -webkit-filter: drop-shadow(0 0 1.5em white);
           filter: drop-shadow(0 0 1.5em white);
+}
+
+.postid-12141 #main .fusion-row .portfolio-full {
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 @media screen and (min-width: 481px) {
