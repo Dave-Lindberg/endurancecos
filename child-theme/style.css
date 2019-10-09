@@ -3,7 +3,7 @@ Theme Name: Avada Child
 Description: Child theme for the Avada
 Author: Dave Lindberg
 Template: Avada
-Version: 1.0.1
+Version: 1.0.2
 */
 @media only screen and (max-width: 480px) {
   .normal_logo {
@@ -179,6 +179,15 @@ h2.home {
   text-shadow: 0px 0px 30px rgba(0, 60, 120, 0.4) !important;
 }
 
+h2.home a {
+  color: white !important;
+  text-decoration: none;
+}
+
+h2.home a:hover, #main a:hover {
+  text-decoration: none !important;
+}
+
 h3.home-sub {
   font-family: "PT Sans", sans-serif !important;
   font-style: italic !important;
@@ -305,6 +314,7 @@ h3.home-sub {
   }
   #post-12020 .fusion-one-third img, .page-id-12020 .fusion-one-third img, .page-id-2712 .fusion-one-third img {
     height: 17vw !important;
+    width: 33vw !important;
   }
   #post-12020 .fusion-one-third h5, .page-id-12020 .fusion-one-third h5, .page-id-2712 .fusion-one-third h5 {
     margin-left: 1px;
@@ -312,14 +322,10 @@ h3.home-sub {
 }
 
 /* ----------------------------------------
-   Portfolio Page
+   Portfolio Page 
    --------------------------------------- */
 #post-12020 p {
   display: none;
-}
-
-#post-12020 img {
-  height: 28vw;
 }
 
 #post-12020 .company-tile img {
@@ -332,9 +338,37 @@ h3.home-sub {
           filter: unset;
 }
 
+#post-12020 .fusion-one-fourth {
+  width: 25%;
+}
+
+#post-12020 .fusion-one-fourth img {
+  width: 100%;
+  height: 12.5vw;
+}
+
+@media screen and (max-width: 480px) {
+  #post-12020 .fusion-one-fourth {
+    width: 100vw;
+    height: 50vw;
+    margin-bottom: 1px !important;
+  }
+  #post-12020 .fusion-one-fourth img {
+    width: 100vw;
+    height: 50vw;
+  }
+}
+
 .fusion-title .title-sep.sep-double {
   border-top-width: 0px;
   border-color: #aeaeae !important;
+}
+
+/* ----------------------------------------
+   Partners Page 
+   --------------------------------------- */
+#post-2712 p {
+  display: none;
 }
 
 /* ----------------------------------------
